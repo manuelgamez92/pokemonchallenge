@@ -1,0 +1,11 @@
+<div class="container">
+    <form [formGroup]="form" (submit)="onSearch()" class="form-inline">
+        <div class="form-group mx-sm-3 mb-2" align="center">
+          <label for="" class="sr-only">Pokemon</label>
+          <input type="text" class="form-control"
+          formControlName="pokemonInput"
+          placeholder="pokemon">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+      </form>
+</div>

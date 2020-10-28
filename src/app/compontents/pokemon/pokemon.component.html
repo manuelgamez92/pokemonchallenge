@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let pokemon of pokemons">
+      <div class="card"  align="center">
+        <img
+          class=""
+          [src]="pokemon.picture"
+          alt="{{pokemon.name}}"
+          style="padding-top: 5px;"/>
+        <div class="card-body">
+          <h5 class="card-title">{{ pokemon.name | uppercase }}</h5>
+          <p class="card-text">Id: {{ pokemon.id }}</p>
+          <p class="card-text">Quantity: {{ pokemon.quantity }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
